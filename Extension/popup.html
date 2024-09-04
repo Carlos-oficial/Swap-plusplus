@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parser de turnos</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="maincontent">
+      <h1>Page Content<h2>
+  </div>
+  <div id="overlay"></div>
+  <div id="popup">
+      <div class="popupcontrols">
+          <button id="popupclose">X</button>
+      </div>
+      <div class="popupcontent">
+          <h1>Some Popup Content</h1>
+      </div>
+  </div>
+    <script type="text/javascript">
+      // Initialize Variables
+      var closePopup = document.getElementById("popupclose");
+      var overlay = document.getElementById("overlay");
+      var popup = document.getElementById("popup");
+
+      // Close Popup Event
+      closePopup.onclick = function () {
+        overlay.style.display = "none";
+        popup.style.display = "none";
+      };
+    </script>
+  </body>
+</html>
